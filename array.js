@@ -54,4 +54,52 @@
 //ou
 
 //const somar = (a,b) => a+b
-//const total = numeros.reduce(somar)
+//const total = numeros.reduce(somar, 0 )
+                        //1ºAcumulador
+                        //2ºElemento
+                        //3ºIndice
+                        //4ºArray
+
+
+//MAP (quadradro de cada elemento)
+// const numeros = [3, 12, 81, 13, 20, 17]
+
+// const quadrado = (numero) => numero ** 2
+// const numerosQuadrado = numeros.map(quadrado)
+// console.log(numerosQuadrado)
+//
+//
+
+//FILTER (numeros menores que 20)
+
+// const numeros = [3, 12, 81, 13, 20, 17]
+
+// const eMenor20 = (numero) => numero < 20
+// const numerosMenores20 = numeros.filter(eMenor20)
+// console.log(numerosMenores20)
+//
+//
+
+// Soma de todos os números menores que 20 elevados ao quadrado
+// const numeros = [3, 12, 81, 13, 20, 17]
+// const quadrado = (numero) => numero ** 2
+// const eMenor20 = (numero) => numero < 20
+// const soma = (a,b) => a + b
+// const resultado = numeros.filter(eMenor20)
+//                          .map(quadrado)
+//                          .reduce(soma)
+// console.log(resultado)
+
+
+//7- Desconto de 20% para todos os elementos
+//8- Desconto de 20% somente para os numeros impares 
+
+//EXERCICIO7
+const desconto20 = (numero) => numero * 0.8
+const desconto = numeros.map(desconto20)
+console.log(desconto)
+
+//EXERCICIO8
+const eImpares = (num) => num%2 != 0;
+const resultado = numeros.filter(eImpares).map(desconto20)
+console.log(resultado)
