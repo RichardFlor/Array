@@ -95,11 +95,12 @@
 //8- Desconto de 20% somente para os numeros impares 
 
 //EXERCICIO7
+const numeros = [3, 12, 81, 13, 20, 17] 
 const desconto20 = (numero) => numero * 0.8
 const desconto = numeros.map(desconto20)
 console.log(desconto)
 
 //EXERCICIO8
 const eImpares = (num) => num%2 != 0;
-const resultado = numeros.filter(eImpares).map(desconto20)
+const resultado = numeros.filter(eImpares)
 console.log(resultado)
